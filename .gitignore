@@ -1,0 +1,64 @@
+.DS_Store
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+
+# Python
+**/.venv/
+**/.uv-cache/
+**/__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+**/.mypy_cache/
+*.py[cod]
+
+# Node.js
+**/node_modules/
+**/dist/
+**/coverage/
+**/htmlcov/
+**/.npm-cache/
+**/.pnpm-store/
+**/test-results/
+**/playwright-report/
+**/.playwright-cli/
+**/output/
+*.tsbuildinfo
+
+# Runtime data
+**/data/uploads/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+
+# Logs and coverage metadata
+*.log
+**/logs/
+.coverage
+.coverage.*
+
+# Local design review and generated captures
+source-captures/
+canvas-qa-*.png
+**/reference-*.png
+**/local-*.png
+**/qa-comparison*.png
+**/design-qa.md
+
+# Private or third-party visual reference assets
+apps/web/public/source-assets/
+
+# Temporary agent planning notes and implementation reports
+**/task_plan.md
+**/findings.md
+**/progress.md
+**/*_IMPLEMENTATION_REPORT.md
+**/MULTI_AGENT_*.md
+
+# Editors
+.idea/
+.vscode/
+.gstack/

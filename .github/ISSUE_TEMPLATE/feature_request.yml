@@ -1,0 +1,29 @@
+name: Feature request
+description: 提议可验证的产品或工程改进
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决的问题
+      description: 请描述用户场景和当前阻碍。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+      description: 说明期望行为，不需要预先确定内部实现。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收标准
+      placeholder: |
+        - [ ] 用户可以……
+        - [ ] 失败时……
+    validations:
+      required: true

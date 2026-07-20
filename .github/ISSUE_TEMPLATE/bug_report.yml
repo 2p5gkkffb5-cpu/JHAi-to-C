@@ -1,0 +1,47 @@
+name: Bug report
+description: 报告可复现的产品或开发问题
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: 感谢反馈。请勿在 Issue 中粘贴 API Key、Token、真实用户数据或未脱敏日志。
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题描述
+      description: 实际发生了什么？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 启动 Mock 模式
+        2. 打开……
+        3. 点击……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Commit 或版本
+      placeholder: git rev-parse --short HEAD
+  - type: input
+    id: environment
+    attributes:
+      label: 环境
+      placeholder: macOS 15 / Node 22 / Python 3.12
+  - type: textarea
+    id: logs
+    attributes:
+      label: 脱敏日志或截图
+      description: 请先移除凭据、手机号、上传素材和 Provider 原始响应。

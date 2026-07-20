@@ -1,0 +1,18 @@
+{
+  "name": "jhai-to-c",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "bash scripts/start.sh",
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:web": "npm --prefix apps/web run build",
+    "test:web": "npm --prefix apps/web test",
+    "check:public": "bash scripts/check-public-tree.sh",
+    "lint:api": "cd apps/api && uv run ruff check .",
+    "test:api": "cd apps/api && uv run pytest",
+    "check": "npm run check:public && npm run test:web && npm run build:web && npm run lint:api && npm run test:api"
+  }
+}
