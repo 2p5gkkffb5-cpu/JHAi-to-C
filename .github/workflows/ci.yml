@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Reject sensitive or local-only tracked files
         run: bash scripts/check-public-tree.sh
 
@@ -33,7 +33,7 @@ jobs:
         working-directory: apps/web
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
@@ -56,7 +56,7 @@ jobs:
         working-directory: apps/api
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
